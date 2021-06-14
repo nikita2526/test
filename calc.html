@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>calculator</title>
+	<script type="text/javascript">
+		function add()
+		{
+			var a,b,c;
+			a = Number(document.getElementById('first').value);
+			b = Number(document.getElementById('second').value);
+			c = a+b;
+			document.getElementById('answer').value = c;
+		}
+	</script>
+</head>
+<body align="center">
+	Enter the first number: <input id='first'><br>
+	Enter the second number: <input id='second'><br>
+	<button onclick="add()">Add</button>
+	Result: <input id='answer'>
+</body>
+</html>
